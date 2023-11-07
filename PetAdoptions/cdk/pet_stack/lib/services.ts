@@ -57,7 +57,7 @@ export class Services extends Stack {
         var topic_email = this.node.tryGetContext('snstopic_email');
         if (topic_email == undefined)
         {
-            topic_email = "someone@example.com";
+            topic_email = "charles.lin@appdynamics.com";
         }
         topic_petadoption.addSubscription(new subs.EmailSubscription(topic_email));
 
