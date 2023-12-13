@@ -76,7 +76,8 @@ def setEKSNodeGroupCountToNormal(nodegroup_name):
         nodegroupName=nodegroup_name,
         scalingConfig={
             'minSize': 2,
-            'desiredSize': 2
+            'desiredSize': 2,
+            'maxSize': 4
         },
     )
     waitTillUpdateCompletes(update_response,nodegroup_name)
